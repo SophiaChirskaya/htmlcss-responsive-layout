@@ -5,65 +5,165 @@
 }
 
 body{
-    font-family: sans-serif;
-    background-color: lightgrey;
-}
-
-.col{
-    height: 150px;
-    background-color: brown;
-    border: solid 1px black;
-}
-
-header{
-    font-family: "Nerko One", cursive;
-    font-size: 36px;
-    height: 100px;
-    color: chocolate;
-    text-align: center;
-    text-shadow: grey 6px;
-    background-color: white;
-  
-}
-
-/* rules main part */
-
-.container{
-    width: 80%;
-    margin: 30px auto;
-    /* DEBUG */
-    background-color: aqua;
-    height: 400px;
-}
-
-.col col-video{
-    background-size: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f6f5f3;
+    line-height: 1,5;
 }
 
 ul li{
     list-style: none;
 }
 
-
-footer{
-    background-color: chocolate;
-    /* DEBUG */
-    height: 150px;
+a{
+    text-decoration: none;
 }
+
+h1{
+    font-family: "Nerko One", cursive;
+    color: #ff9614;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.0767);
+
+}
+
+.clearfix::after{
+    display: table;
+    content: "";
+    clear: both;
+}
+
+button{
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    color: black;
+    background-color: white;
+    border-radius: 999px;
+}
+
+header{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background-color: white;
+}
+
+header h1{
+    font-size: 4rem;
+}
+
+#main-container{
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+#title-category{
+    color: grey;
+    margin-bottom: 0.5rem;
+}
+
+#main-title{
+    font-size: 2rem;
+    color: #4e3969;
+    margin-bottom: 1rem;
+}
+
+#main-title span{
+    display: none;
+}
+
+#recipe-section{
+    margin-bottom: 2rem;
+    background-color: white;
+
+}
+
+#recipe-video{
+    width: 100%;
+}
+
+#recipe-video img{
+    width: 100%;
+}
+
+#recipe-overview h3,
+#recipe-overview li{
+    margin-bottom: 1rem;
+}
+
+#social-section{
+    margin-bottom: 2rem;
+}
+
+#social-section ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+#social-section i{
+    font-size: 1.5rem;
+
+}
+
+#social-section span{
+    display: none;
+}
+
+#subscribe-section{
+    display: none;
+    margin-bottom: 2rem;
+}
+
+#subscribe-section img{
+    width: 100%;
+}
+
+#presentation-section{
+    margin-bottom: 5rem;
+}
+
+#presentation-section h2{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+#presentation-img{
+    margin: 1rem auto;
+    width: 70%;
+}
+
+#presentation-img img{
+    width: 100%;
+}
+
+#presentation-section article{
+    font-size: 1.3rem;
+}
+
+
+
+
+
 
 /* tablet version */
 
 @media screen and (min-width: 768px) {
     .row{
 
+        width: 80%;
     }
 
     .col col-video{
-        height: 70%;
+        width: 100%;
     }
 
     .col col-info{
-        height: 30%;
+        width: 100%;
     }
 
     
