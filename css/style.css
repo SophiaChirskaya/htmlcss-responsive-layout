@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    background-color: lightgrey;
+}
+
+.col{
+    height: 150px;
+    background-color: brown;
+    border: solid 1px black;
+}
+
+header{
+    font-family: "Nerko One", cursive;
+    font-size: 36px;
+    height: 100px;
+    color: chocolate;
+    text-align: center;
+    text-shadow: grey 6px;
+    background-color: white;
+  
+}
+
+/* rules main part */
+
+.container{
+    width: 80%;
+    margin: 30px auto;
+    /* DEBUG */
+    background-color: aqua;
+    height: 400px;
+}
+
+.col col-video{
+    background-size: 100%;
+}
+
+ul li{
+    list-style: none;
+}
+
+
+footer{
+    background-color: chocolate;
+    /* DEBUG */
+    height: 150px;
+}
+
+/* tablet version */
+
+@media screen and (min-width: 768px) {
+    .row{
+
+    }
+
+    .col col-video{
+        height: 70%;
+    }
+
+    .col col-info{
+        height: 30%;
+    }
+
+    
+}
+
+/* desktop version */
+
+@media screen and (min-width: 992px) {
+    /* general rules */
+    .row{
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    /* main part rules */
+    #info-recipe .col-video{
+        width: 70%;
+
+    }
+
+    #info-recipe .col-info{
+        width: 30%;
+
+    }
+
+    .btn{
+        padding: 15px 20px;
+        border-radius: 25px;
+        background-color: white;
+    }
+
+    /* footer rules */
+
+    footer .col{
+        width: 40%;
+    }
+
+    
+}
