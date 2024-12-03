@@ -31,7 +31,7 @@ h1{
     clear: both;
 }
 
-button{
+.button{
     display: flex;
     align-items: center;
     padding: 1rem;
@@ -145,62 +145,127 @@ header h1{
     font-size: 1.3rem;
 }
 
+footer{
+    background-color: mediumpurple;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 1.2rem;
+}
 
+footer ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
 
+#footer-left{
+    margin-bottom: 1rem;
 
+}
+
+footer a{
+    color: white;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
 
 
 /* tablet version */
 
 @media screen and (min-width: 768px) {
-    .row{
 
-        width: 80%;
+    header{
+        justify-content: start;
     }
 
-    .col col-video{
-        width: 100%;
+    #main-container{
+        width: 90%;
     }
 
-    .col col-info{
-        width: 100%;
+    #main-title{
+        font-size: 2.5rem;
     }
 
-    
-}
+    #main-title span{
+        display: inline;
+    }
+
+    #recipe-overview ul{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.2rem;
+    }
+
+    .button{
+        padding: 0.8rem 3rem;
+    }
+
+    .button span{
+        display: none;
+    }
+
+    #subscribe-sectiom{
+        display: block;
+    }
+
+    #presentation-img{
+        margin: 0;
+        width: 30%;
+    }
+
+    #presentation-img img{
+        float: left;
+    }margin-right: 15px;
 
 /* desktop version */
 
 @media screen and (min-width: 992px) {
     /* general rules */
-    .row{
-        display: flex;
-        justify-content: space-between;
 
+    #main-container{
+        width: 70%;
     }
 
-    /* main part rules */
-    #info-recipe .col-video{
+    #main-title{
+        font-size: 3rem;
+        text-wrap: nowrap;
+    }
+
+    #recipe-section{
+        display: flex;
+        align-items: stretch;
+    }
+
+    #recipe-video{
         width: 70%;
 
     }
 
-    #info-recipe .col-info{
-        width: 30%;
-
+    #recipe-video img{
+        width: 100%;
+        height: 100%;
     }
 
-    .btn{
-        padding: 15px 20px;
-        border-radius: 25px;
-        background-color: white;
+    #recipe-overview ul{
+        display: inline-block;
     }
 
-    /* footer rules */
-
-    footer .col{
-        width: 40%;
+    #recipe-section span{
+        display: inline;
     }
 
-    
-}
+    .button i{
+        margin-right: 5px;
+    }
+
+    footer{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-align: left;
+    }
